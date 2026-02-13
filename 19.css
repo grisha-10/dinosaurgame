@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: monospace;
+}
+
+.game {
+    background-image: url(t-rex-background.png);
+    height: 200px;
+    animation: fon 1.3s infinite linear;
+    position: relative;
+}
+
+@keyframes fon {
+    0% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+.dino {
+    background-image: url(dinozavr.gif);
+    height: 50px;
+    background-size: 40px 50px;
+    width: 40px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+.jump-class{
+    animation: jump 0.8s linear;
+}
+@keyframes jump {
+    0%{
+       top: 150px;
+    }
+    50%{
+        top: 50px;
+
+    }
+    100%{
+         top: 150px;
+    }
+}
+
+.cactus {
+    position: absolute;
+    height: 40px;
+    width: 35px;
+    background-image: url(cactus.png);
+    background-size: 35px 40px;
+    top: 160px;
+    left: 80%;
+    animation: move 2s infinite linear;
+}
+
+@keyframes move {
+    0% {
+        left: 100%;      
+    }
+
+
+    100% {
+        left: 0%; 
+    }
+}
+p{
+    text-align: center;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
