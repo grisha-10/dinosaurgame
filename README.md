@@ -1,2 +1,0 @@
-# dinosaurgame
-my dinogame
